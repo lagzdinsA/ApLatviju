@@ -10,3 +10,8 @@
     border: none;
     transition: all 0.3s ease-out;
 }
+
+::selection {
+    color: white;
+    background: #F96C03;
+}
