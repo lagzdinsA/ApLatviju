@@ -12,7 +12,6 @@
 }
 
 :root {
-    --maincolor: #6e8ae8;
     --black: #555;
     --light-color: #777;
     --bg: #e9f3fc;
@@ -39,4 +38,97 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 9%;
+}
+
+.bg {
+    background-image: url("../assets/images/latvijaz.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%; /* Scale down the image to 80% of its original size */
+    background-position: center 1.5rem; /* Center horizontally and shift 10rem down vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-top: 25rem;
+    margin-left: 40rem;
+}
+
+
+.l_con{
+    overflow: hidden;
+    padding: 0;
+    width: 28rem;
+    height: 21rem;
+    display: grid;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.cont1{
+    background-color: #FFFBEE;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1 .aLv{
+    color: #F96C03;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.cont1 h1{
+    color: #F96C03;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cont1 p{
+    color: #d1864d;
+}
+
+.cont1 input{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0.65rem;
+    margin: 8px 0;
+}
+
+.cont1 button{
+    width: 80%;
+    background-color: #F96C03;
+    color: #fff;
+    padding: 0.65rem 1rem;
+    border-radius: 2rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.war{
+    margin-top:10px ;
+    text-decoration: underline;
+}
+
+@media (max-width:1360px){
+    .l_con{
+        display: block;
+        width: 25rem;
+        height: 18rem;
+    }
+    
+    .cont1{
+        height: 100%;
+    }
+    
+    .bg{
+    background-color: #fff;
+    background-image: none ;
+    margin-left: 0rem ;
+    
+    }
 }

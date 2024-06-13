@@ -11,3 +11,15 @@ if (!$connection) {
 } else {
     #echo "Savienojums veiksmīgi izveidots!";
 }
+
+$dsn = "mysql:host=localhost;dbname=grobina1_lagzdins";
+$user = "grobina1_lagzdins";
+$pwd = "cvvRAO4K!";
+
+// Create connection
+try {
+    $pdo = new PDO($dsn, $user, $pwd);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}

@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+
+:root {
+    --black: #555;
+    --light-color: #777;
+    --bg: #e9f3fc;
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --radius: 0.5rem;
+}
+
+::selection {
+    color: white;
+    background: #F96C03;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.apl {
+    font-size: 1.8rem;
+    color: #F96C03;
+    margin-right: 14.5rem;
+}
+
+a {
+    color: #F96C03;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.admin .kopsavilkums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 0.5rem;
+}
+
+.admin .row {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.admin .row .info1 {
+    flex: 1 1 45rem;
+    max-width: 100%;
+}
+
+.admin .defaultBorders {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius);
+}
+
+.admini .defaultBorders {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius);
+}
+
+.admini .kopsavilkumsi .info-box {
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    margin-left: 5rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.admini .kopsavilkumsi {
+    padding-top: 8.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 0.5rem;
+}
+
+.admini .row {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.admini .row .info1 {
+    flex: 1 1 45rem;
+    max-width: 100%;
+}
+
+
+.admin .btn {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+table {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    height: 3.5rem;
+    border-bottom: .1rem solid #ddd;
+}
+
+th {
+    color: var(--black);
+}
+
+tr:hover {
+    background: #FFFBEE;
+}
+
+.info-box {
+    padding-top: 2rem;
+}
+
+.admin .kopsavilkums .info-box {
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    margin-left: 5rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.info-box span {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+    color: #F96C03;
+    background-color: #FFFBEE;
+    border-radius: var(--radius);
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box h3 {
+    color: #F96C03;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.info-box p {
+    color: #F96C03;
+    font-size: 1.3rem;
+}
+
+.adminTable {
+    font-size: 1.5rem;
+}
+
+.current {
+    font-weight: bold;
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.head-info {
+    background: #f8f8f8;
+    color: #F96C03;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: .1rem solid #ddd;
+    text-align: center;
+}
+
+.row2 {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.th1 {
+    text-align: center;
+    height: 3.5rem;
+    border-bottom: .1rem solid #ddd;
+    max-width: 20rem;
+}
+
+.td1 {
+    width: 10rem;
+}
+
+
+
+
+
+.admin2 .row22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8rem; 
+}
+
+.admin2 .row22 .info12 {
+    flex: 1 1 auto;
+    max-width: 90%;
+    margin: auto; 
+}
+
+.main-table2 {
+    font-size: 1rem;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse; 
+    margin: auto; 
+}
+
+.table-header2 {
+    text-align: center;
+    height: 3rem; 
+    border-bottom: 0.1rem solid #ddd;
+    color: var(--black);
+    padding: 0.5rem;
+    word-wrap: break-word;
+    white-space: normal; 
+    font-size: 0.9rem; 
+}
+
+.table-cell2 {
+    text-align: center;
+    height: 3rem; 
+    border-bottom: 0.1rem solid #ddd;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 0.9rem;
+}
+
+.head-info2 {
+    background: #f8f8f8;
+    color: #F96C03;
+    padding: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: .1rem solid #ddd;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.head-info2 h3 {
+    margin: 0 auto;
+}
+
+.head-info2 .a {
+    position: absolute;
+    right: 0; 
+}
+
+.table-row2:hover {
+    background: #FFFBEE;
+}
+
+.admin2 .kopsavilkums2 .info-box2 {
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    margin-left: 5rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.info-box2 span {
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+    color: #F96C03;
+    background-color: #FFFBEE;
+    border-radius: var(--radius);
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box2 h3 {
+    color: #F96C03;
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+
+.info-box2 p {
+    color: #F96C03;
+    font-size: 1.3rem;
+}
+
+
+.btn3{
+    display: inline-block;
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #F96C03;
+    background-color: #f8f8f8;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.btn3:hover{
+    background: #fff;
+
+}
+
+
+
+
+
+.admin5 .row5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.admin5 .row5 .info15 {
+    flex: 1 1 auto;
+    max-width: 90%;
+    margin: auto; 
+}
+
+.admin5 .kopsavilkums5 .info-box5 {
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    margin-left: 5rem;
+    padding: 1rem 0;
+    margin-top: 3rem;   
+}
+
+
+.head-info5 {
+    background: #f8f8f8;
+    color: #F96C03;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: .1rem solid #ddd;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+
+.main-table5 {
+    font-size: 1rem; 
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse; 
+    margin: auto; 
+}
+
+.th15 {
+    text-align: center;
+    height: 3rem;
+    border-bottom: 0.1rem solid #ddd;
+    color: var(--black);
+    padding: 0.5rem;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 0.9rem;
+    width: 90%;
+}
+
+.td15 {
+    text-align: center;
+    height: 3rem;
+    border-bottom: 0.1rem solid #ddd;
+    padding: 0.5rem;
+    word-wrap: break-word; 
+    white-space: normal; 
+    font-size: 0.9rem;
+}
+
+.table-row5:hover {
+    background: #FFFBEE;
+}
+
+
+
+.main-table5 {
+    font-size: 1rem;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse; 
+    margin: auto; 
+}
+
+.table-header5 {
+    text-align: center;
+    height: 3rem; 
+    border-bottom: 0.1rem solid #ddd;
+    color: var(--black);
+    padding: 0.5rem;
+    word-wrap: break-word;
+    white-space: normal; 
+    font-size: 0.9rem; 
+}
+
+.table-cell5 {
+    text-align: center;
+    height: 3rem; 
+    border-bottom: 0.1rem solid #ddd;
+    padding: 0.5rem;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 0.9rem;
+}
+
+.head-info5 {
+    background: #f8f8f8;
+    color: #F96C03;
+    padding: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: .1rem solid #ddd;
+    text-align: center;
+}
